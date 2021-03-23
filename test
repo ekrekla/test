@@ -1,0 +1,86 @@
+<button id="Copy">GARANTi BANKASI</button>
+<p>
+<input onClick="this.setSelectionRange(0, this.value.length)" size="35" value="TR18  0006  2001  1520  0006  2985  70" /> 
+</p>
+
+<button id="Copy1">iS BANKASI</button>
+<p>
+<input onClick="this.setSelectionRange(0, this.value.length)" size="35" value="TR75  0006  4000  0014  3001  6422  69" /> 
+</p>
+
+<button id="Copy2">AKBANK</button>
+<p>
+<input onClick="this.setSelectionRange(0, this.value.length)" size="35" value="TR85  0004  6001  0788  8000  1671  81" /> 
+</p>
+
+<button id="Copy3">YAPI KREDi BANKASI</button>
+<p>
+<input onClick="this.setSelectionRange(0, this.value.length)" size="35" value="TR88  0006  7010  0000  0095  7594  36" /> 
+</p>
+
+<button id="Copy4">FiNANSBANK</button>
+<p>
+<input onClick="this.setSelectionRange(0, this.value.length)" size="35" value="TR91  0011  1000  0000  0058  1183  60" /> 
+</p>
+
+<button id="Copy5">HALKBANK</button>
+<p>
+<input onClick="this.setSelectionRange(0, this.value.length)" size="35" value="TR13  0001  2009  2560  0010  2604  17" /> 
+</p>
+
+<button id="Copy6">ZiRAAT BANKASI</button>
+<p>
+<input onClick="this.setSelectionRange(0, this.value.length)" size="35" value="TR13  0001  0000  5070  3293  9850  01" /> 
+</p>
+
+<button id="Copy7">VAKIFBANK</button>
+<p>
+<input onClick="this.setSelectionRange(0, this.value.length)" size="35" value="TR64  0001  5001  5800  7305  1855  78" /> 
+</p>
+
+<button id="Copy8">TEB</button>
+<p>
+<input onClick="this.setSelectionRange(0, this.value.length)" size="35" value="TR64  0003  2000  0000  0025  9863  30" /> 
+</p>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+function Clipboard_CopyTo(value) {
+  var tempInput = document.createElement("input");
+  tempInput.value = value;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+}
+
+document.querySelector('#Copy').onclick = function() {
+  Clipboard_CopyTo('TR18  0006  2001  1520  0006  2985  70');
+}
+document.querySelector('#Copy1').onclick = function() {
+  Clipboard_CopyTo('TR75  0006  4000  0014  3001  6422  69');
+}
+document.querySelector('#Copy2').onclick = function() {
+  Clipboard_CopyTo('TR85  0004  6001  0788  8000  1671  81');
+}
+document.querySelector('#Copy3').onclick = function() {
+  Clipboard_CopyTo('TR88  0006  7010  0000  0095  7594  36');
+}
+document.querySelector('#Copy4').onclick = function() {
+  Clipboard_CopyTo('TR91  0011  1000  0000  0058  1183  60');
+}
+document.querySelector('#Copy5').onclick = function() {
+  Clipboard_CopyTo('TR13  0001  2009  2560  0010  2604  17');
+}
+document.querySelector('#Copy6').onclick = function() {
+  Clipboard_CopyTo('TR13  0001  0000  5070  3293  9850  01');
+}
+document.querySelector('#Copy7').onclick = function() {
+  Clipboard_CopyTo('TR64  0001  5001  5800  7305  1855  78'); 
+}
+document.querySelector('#Copy8').onclick = function() {
+  Clipboard_CopyTo('TR64  0003  2000  0000  0025  9863  30');
+}
+</script>
